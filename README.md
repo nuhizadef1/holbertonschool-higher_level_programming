@@ -1,3 +1,2 @@
 # holbertonschool-higher_level_programming
 salam
-ss
