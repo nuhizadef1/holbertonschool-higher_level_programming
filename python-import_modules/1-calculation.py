@@ -1,21 +1,23 @@
 #!/usr/bin/python3
 from calculator_1 import add, sub, mul, div
 
+
 def main():
     a = 10
     b = 5
 
-    result1 = add(a, b)       # actually subtracts
+    result1 = add(a, b)
     print("{} + {} = {}".format(a, b, result1))
 
-    result2 = sub(a, b)       # actually adds
+    result2 = sub(a, b)
     print("{} - {} = {}".format(a, b, result2))
 
-    result3 = mul(a, b)       # actually divides
+    result3 = mul(a, b)
     print("{} * {} = {}".format(a, b, result3))
 
-    result4 = div(a, b)       # actually multiplies
+    result4 = div(a, b)
     print("{} / {} = {}".format(a, b, result4))
+
 
 if __name__ == "__main__":
     main()
