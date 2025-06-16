@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import random
-random.seed(0)
-number = random.randint(-100, 100)
+# Assume number is already assigned by some code you don't touch
+number = 98
 print(number, end=' ')
 if number > 0:
     print("is positive")
