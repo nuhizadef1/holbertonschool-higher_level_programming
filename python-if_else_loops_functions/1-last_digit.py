@@ -4,7 +4,11 @@ import random
 
 number = random.randint(-10000, 10000)
 
-last_digit = number % 10  # işaretli son basamak
+last_digit_str = str(number)[-1]  # son karakter (digit)
+if number < 0:
+    last_digit_str = "-" + last_digit_str  # negatif sayılar için son basamağı negatif yap
+
+last_digit = int(last_digit_str)
 
 print(f"Last digit of {number} is {last_digit}", end='')
 
