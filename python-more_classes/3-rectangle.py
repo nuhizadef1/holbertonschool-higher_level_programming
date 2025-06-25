@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 class Rectangle:
-    """Defines a rectangle."""
-
+    """Defines a rectangle with width and height, providing methods to calculate area, perimeter,
+    and to represent the rectangle as a string using the '#' character."""
+    
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
