@@ -1,20 +1,25 @@
 #!/usr/bin/python3
+"""This module defines a Rectangle class with width and height validation,
+methods to compute area and perimeter, and string representation using '#'.
+"""
+
+
 class Rectangle:
-    """Defines a rectangle with width and height, providing methods to calculate area, perimeter,
-    and to represent the rectangle as a string using the '#' character."""
-    
+    """A class that defines a rectangle by width and height."""
+
     def __init__(self, width=0, height=0):
+        """Initialize the rectangle with optional width and height."""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Retrieve the width."""
+        """Retrieve the width of the rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Set the width with validation."""
+        """Set the width of the rectangle with validation."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -23,12 +28,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Retrieve the height."""
+        """Retrieve the height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Set the height with validation."""
+        """Set the height of the rectangle with validation."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -46,8 +51,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return the string representation of the rectangle using '#'."""
+        """Return the rectangle as a string of '#' characters."""
         if self.__width == 0 or self.__height == 0:
             return ""
-        lines = ['#' * self.__width for _ in range(self.__height)]
-        return "\n".join(lines)
+        return "\n".join(["#" * self.__width for _ in range(self.__height)])
