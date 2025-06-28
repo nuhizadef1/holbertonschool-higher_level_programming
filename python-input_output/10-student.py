@@ -16,7 +16,7 @@ class Student:
         If attrs is a list of strings, returns only those attributes.
         Otherwise, returns all attributes.
         """
-        if isinstance(attrs, list) and all(type(a) == str for a in attrs):
+        if isinstance(attrs, list) and all(isinstance(a, str) for a in attrs):
             filtered_dict = {}
             for attr in attrs:
                 if hasattr(self, attr):
