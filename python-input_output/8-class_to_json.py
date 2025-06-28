@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Function that returns the dictionary description for JSON serialization of an object
+Function that returns the dictionary description for
+JSON serialization of an object
 """
 
 
