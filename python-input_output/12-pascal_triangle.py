@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
+"""
+Module that contains a function pascal_triangle(n) which returns
+the Pascal's triangle of size n as a list of lists of integers.
+"""
 def pascal_triangle(n):
     if n <= 0:
         return []
@@ -18,15 +20,3 @@ def pascal_triangle(n):
         triangle.append(row)
 
     return triangle
-
-
-def main():
-    n = int(input("Pascal üçbucağının sətrin sayı: "))
-    triangle = pascal_triangle(n)
-    for row in triangle:
-        print(row)
-
-
-if __name__ == "__main__":
-    main()
-
