@@ -36,8 +36,7 @@ class CustomObject:
         except FileNotFoundError:
             return False 
         except Exception:
-            return False
-        return None 
+            return None
 
 
 if __name__ == "__main__":
