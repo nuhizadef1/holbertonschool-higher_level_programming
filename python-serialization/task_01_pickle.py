@@ -30,8 +30,8 @@ class CustomObject:
         try:
             with open(filename, 'rb') as file:
                 obj = pickle.load(file)
-            return obj
-        return True 
+                return obj
+            return True 
 
         except FileNotFoundError:
             return False 
