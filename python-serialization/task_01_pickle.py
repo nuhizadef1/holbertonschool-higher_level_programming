@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 import pickle
 
+
 class CustomObject:
+    """This task is bad"""
+
     def __init__(self, name, age, is_student):
         self.name = name
         self.age = age
@@ -28,11 +31,15 @@ class CustomObject:
             with open(filename, 'rb') as file:
                 obj = pickle.load(file)
             return obj
-        except (FileNotFoundError, pickle.UnpicklingError) as e:
-            print(f"Error during deserialization: {e}")
-            return None
+        return True 
 
-# If the script is executed directly (for testing)
+        except FileNotFoundError:
+            return False 
+        except Exception:
+            return False
+        return None 
+
+
 if __name__ == "__main__":
     # Create an instance of CustomObject
     obj = CustomObject(name="John", age=25, is_student=True)
