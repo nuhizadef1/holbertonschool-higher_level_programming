@@ -1,4 +1,4 @@
--- Foreing Key
+-- Foreing Keys
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 USA hbtn_0d_usa;
 
